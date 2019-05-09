@@ -1,0 +1,298 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<title>Bus Dev Committies</title>
+    </head>
+    <style>
+ #html, body{
+     background-color: whitesmoke;
+     font-family: "Times New Roman", Times, serif;
+
+ }
+
+    </style>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">    
+              <!--button that opens the sidebar-->
+              <button class="button btn-primary" onclick="openNav()">Search&ensp;<i class="fas fa-search"></i>  </button>
+              <!--dropdowns
+                -to add either uncomment or copy and paste changing corresponding links
+                -to remove either comment out or delete
+              -->
+              <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Forms
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="../busDev/forms.html">Business Development</a>
+                <!--  <a class="dropdown-item" href="../cityClerk/forms.html">City Clerk</a>
+                  <a class="dropdown-item" href="../fieldOps/forms.html">Field Operations</a>
+                  <a class="dropdown-item" href="../fire/forms.html">Fire</a>
+                  <a class="dropdown-item" href="../housing/forms.html">Housing and Community Development</a>
+                --><a class="dropdown-item" href="../hr/forms.html">Human Resources</a>                                <a class="dropdown-item" href="../finance/forms.html">Finance</a>
+
+                  <!--<a class="dropdown-item" href="../infoServices/forms.html">Information Servies</a>
+                  <a class="dropdown-item" href="../infraDev/forms.html">Infrastructure & Development</a>
+                  <a class="dropdown-item" href="../police/forms.html">Police</a>
+                  --><a class="dropdown-item" href="../procurement/forms.html">Procurement</a>
+                  <a class="dropdown-item" href="../pcard/forms.html">P-Card</a>
+                  <!--
+                  <a class="dropdown-item" href="../waterWorks/forms.html">Water Works</a>
+                  --></div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Policies
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <!--  <a class="dropdown-item" href="../busDev/policies.html">Business Development</a>-->
+                 <!-- <a class="dropdown-item" href="../cityClerk/policies.html">City Clerk</a>
+                  <a class="dropdown-item" href="../fieldOps/policies.html">Field Operations</a>
+                  <a class="dropdown-item" href="../finance/policies.html">Finance</a>
+                  <a class="dropdown-item" href="../fire/policies.html">Fire</a>
+                  <a class="dropdown-item" href="../housing/policies.html">Housing and Community Development</a>
+                 --><a class="dropdown-item" href="../hr/policies.html">Human Resources</a>
+                  <!--<a class="dropdown-item" href="../infoServices/policies.html">Information Servies</a>
+                  <a class="dropdown-item" href="../infraDev/policies.html">Infrastructure & Development</a>
+                  <a class="dropdown-item" href="../police/policies.html">Police</a>
+                  --><a class="dropdown-item" href="../procurement/policies.html">Procurement</a>
+                  <a class="dropdown-item" href="../pcard/policiesandprocedures.html">P-Card</a>
+                  <!--
+                  <a class="dropdown-item" href="../waterWorks/policies.html">Water Works</a>
+                  --></div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Brochures
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="../busDev/brochures.html">Business Development</a>
+                  <!--<a class="dropdown-item" href="../cityClerk/brochures.html">City Clerk</a>
+                  <a class="dropdown-item" href="../fieldOps/brochures.html">Field Operations</a>
+                  <a class="dropdown-item" href="../finance/brochures.html">Finance</a>
+                  <a class="dropdown-item" href="../fire/brochures.html">Fire</a>
+                  <a class="dropdown-item" href="../housing/brochures.html">Housing and Community Development</a>
+                  --><a class="dropdown-item" href="../hr/brochures.html">Human Resources</a>
+                  <!--<a class="dropdown-item" href="../infoServices/brochures.html">Information Servies</a>
+                  <a class="dropdown-item" href="../infraDev/brochures.html">Infrastructure & Development</a>
+                  <a class="dropdown-item" href="../police/brochures.html">Police</a>
+                  <a class="dropdown-item" href="../procurement/brochures.html">Procurement</a>
+                  <a class="dropdown-item" href="../waterWorks/brochures.html">Water Works</a>
+                  --></div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Documents
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="../busDev/documents.html">Business Development</a>
+                  <!--<a class="dropdown-item" href="../cityClerk/documents.html">City Clerk</a>
+                  <a class="dropdown-item" href="../fieldOps/documents.html">Field Operations</a>
+                  <a class="dropdown-item" href="../fire/documents.html">Fire</a>
+                  <a class="dropdown-item" href="../housing/documents.html">Housing and Community Development</a>
+                  --><a class="dropdown-item" href="../hr/documents.html">Human Resources</a>                                <a class="dropdown-item" href="../finance/documents.html">Finance</a>
+
+                  <!--<a class="dropdown-item" href="../infoServices/documents.html">Information Servies</a>
+                  <a class="dropdown-item" href="../infraDev/documents.html">Infrastructure & Development</a>
+                  <a class="dropdown-item" href="../police/documents.html">Police</a>
+                  --><a class="dropdown-item" href="../procurement/documents.html">Procurement</a><!--
+                  <a class="dropdown-item" href="../waterWorks/documents.html">Water Works</a>
+                  --></div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Committees
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                 <!-- <a class="dropdown-item" href="../busDev/committies.html">Business Development</a>-->
+                  <!--<a class="dropdown-item" href="../cityClerk/committies.html">City Clerk</a>
+                  <a class="dropdown-item" href="../fieldOps/committies.html">Field Operations</a>
+                  <a class="dropdown-item" href="../finance/committies.html">Finance</a>
+                  <a class="dropdown-item" href="../fire/committies.html">Fire</a>
+                  <a class="dropdown-item" href="../housing/committies.html">Housing and Community Development</a>
+                  --><a class="dropdown-item" href="../hr/committies.html">Human Resources</a>
+                  <!--<a class="dropdown-item" href="../infoServices/committies.html">Information Servies</a>
+                  <a class="dropdown-item" href="../infraDev/committies.html">Infrastructure & Development</a>
+                  <a class="dropdown-item" href="../police/committies.html">Police</a>
+                  <a class="dropdown-item" href="../procurement/committies.html">Procurement</a>
+                  <a class="dropdown-item" href="../waterWorks/committies.html">Water Works</a>
+                  --></div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Procedures
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="../busDev/procedures.html">Business Development</a>
+                  <!--<a class="dropdown-item" href="../cityClerk/procedures.html">City Clerk</a>
+                  <a class="dropdown-item" href="../fieldOps/procedures.html">Field Operations</a>-->
+                  <!--<a class="dropdown-item" href="../fire/procedures.html">Fire</a>
+                  <a class="dropdown-item" href="../housing/procedures.html">Housing and Community Development</a>
+                  --><a class="dropdown-item" href="../hr/procedures.html">Human Resources</a>
+                  <!--<a class="dropdown-item" href="../infoServices/procedures.html">Information Servies</a>
+                  <a class="dropdown-item" href="../infraDev/procedures.html">Infrastructure & Development</a>
+                  <a class="dropdown-item" href="../police/procedures.html">Police</a>
+                  --><a class="dropdown-item" href="../procurement/procedures.html">Procurement</a>
+                  <a class="dropdown-item" href="../pcard/policiesandprocedures.html">P-Card</a>
+                  <a class="dropdown-item" href="../phoneaddr/procedures.html">Phone and Address</a><!--
+                  <a class="dropdown-item" href="../waterWorks/procedures.html">Water Works</a>
+                  --></div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Utilities
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <!--  <a class="dropdown-item" href="../busDev/utilities.html">Business Development</a>-->
+                  <!--<a class="dropdown-item" href="../cityClerk/utilities.html">City Clerk</a>
+                  <a class="dropdown-item" href="../fieldOps/utilities.html">Field Operations</a>
+                  <a class="dropdown-item" href="../fire/utilities.html">Fire</a>
+                  <a class="dropdown-item" href="../housing/utilities.html">Housing and Community Development</a>
+                  --><a class="dropdown-item" href="../hr/utilities.html">Human Resources</a>       
+                         <a class="dropdown-item" href="../finance/utilities.html">Finance</a>
+
+                  <a class="dropdown-item" href="../infoServices/utilities.html">Information Services</a><!--
+                  <a class="dropdown-item" href="../infraDev/utilities.html">Infrastructure & Development</a>
+                  <a class="dropdown-item" href="../police/utilities.html">Police</a>
+                  --> <a class="dropdown-item" href="../procurement/utilities.html">Procurement</a>
+                  <a class="dropdown-item" href="../phoneaddr/utilities.html">Phone and Address</a>
+                 <!-- <a class="dropdown-item" href="../waterWorks/utilities.html">Water Works</a>
+                  --></div>
+              </li>
+            </ul>
+            <!--end dropdowns-->
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          
+          <!--filter section to filter current links displayed on the page
+          -calls js function to get elements in the div to remove based on whats typed in filter area  
+          -->
+         <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" id="myInput" onkeyup="myFunction()" placeholder="Filter" aria-label="Search">
+              </form>
+              <!--end filter-->
+            </div>
+   
+
+          </div>
+            </nav>
+                        <div class="jumbotron jumbotron-fluid bg-primary" style="color: white;">
+         
+                    <div class="container">
+                      <h1 class="display-4">Business Development Committies</h1>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <a href ="#">a</a>&ensp;<a href ="#">b</a>&ensp;<a href ="#">c</a>&ensp;<a href ="#">d</a>&ensp;<a href ="#">e</a>&ensp;
+                    <a href ="#">f</a>&ensp;<a href ="#">g</a>&ensp;<a href ="#">h</a>&ensp;<a href ="#">i</a>&ensp;<a href ="#">j</a>&ensp;
+                    <a href ="#">k</a>&ensp;<a href ="#">l</a>&ensp;<a href ="#">m</a>&ensp;<a href ="#">n</a>&ensp;<a href ="#">o</a>&ensp;
+                    <a href ="#">f</a>&ensp;<a href ="#">p</a>&ensp;<a href ="#">q</a>&ensp;<a href ="#">r</a>&ensp;<a href ="#">s</a>&ensp;
+                    <a href ="#">t</a>&ensp;<a href ="#">u</a>&ensp;<a href ="#">v</a>&ensp;<a href ="#">w</a>&ensp;<a href ="#">x</a>&ensp;
+                    <a href ="#">y</a>&ensp;<a href ="#">z</a><br><br><br><br>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <h3>a</h3>
+                        <hr>
+                        <div id="linka"></div>
+                        <h3>b</h3>
+                        <hr>
+                        <div id="linkb"></div>
+                        <h3>c</h3>
+                        <hr>
+                        <div id="linkc"></div>
+                        <h3>d</h3>
+                        <hr>
+                        <div id="linkd"></div>
+                        <h3>e</h3>
+                        <hr>
+                        <div id="linke"></div>
+                        <h3>f</h3>
+                        <hr>
+                        <div id="linkf"></div>
+                        <h3>g</h3>
+                        <hr>
+                        <div id="linkg"></div>
+                        <h3>h</h3>
+                        <hr>
+                        <div id="linkh"></div>
+                        <h3>i</h3>
+                        <hr>
+                        <div id="linki"></div>
+                      </div>
+                     
+                     
+                      <div class="col-sm-4">
+                          <h3>j</h3>
+                        <hr>
+                        <div id="linkj"></div>
+                        <h3>k</h3>
+                        <hr>
+                        <div id="linkk"></div>
+                        <h3>l</h3>
+                        <hr>
+                        <div id="linkl"></div>
+                        <h3>m</h3>
+                        <hr>
+                        <div id="linkm"></div>
+                        <h3>n</h3>
+                        <hr>
+                        <div id="linkn"></div>
+                        <h3>o</h3>
+                        <hr>
+                        <div id="linko"></div>
+                        <h3>p</h3>
+                        <hr>
+                        <div id="linkp"></div>
+                        <h3>q</h3>
+                        <hr>
+                        <div id="linkq"></div>
+                        <h3>r</h3>
+                        <hr>
+                        <div id="linkr"></div>
+                      </div>
+                     
+                     
+                      <div class="col-sm-4">
+                          <h3>s</h3>
+                        <hr>
+                        <div id="links"></div>
+                        <h3>t</h3>
+                        <hr>
+                        <div id="linkt"></div>
+                        <h3>u</h3>
+                        <hr>
+                        <div id="linku"></div>
+                        <h3>v</h3>
+                        <hr>
+                        <div id="linkv"></div>
+                        <h3>w</h3>
+                        <hr>
+                        <div id="linkw"></div>
+                        <h3>x</h3>
+                        <hr>
+                        <div id="linkx"></div>
+                        <h3>y</h3>
+                        <hr>
+                        <div id="linky"></div>
+                        <h3>z</h3>
+                        <hr>
+                        <div id="link26"></div>
+                       
+                      </div>
+                    </div>
+               
+                  </div>
+                 
+    </body>
+</html>
