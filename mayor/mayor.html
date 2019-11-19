@@ -1,0 +1,341 @@
+<html>
+  <!--all includes do not change-->
+    <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<title>Mayors Office</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../img/logo.png">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <style>
+ #html, body{
+     background-color: whitesmoke;
+     font-family: "Times New Roman", Times, serif;
+     width: 99%;
+
+ }
+ .container2{
+   width: 95%;
+ }
+
+ .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  color: black;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: blue;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    </style>
+    <!--end do not change-->
+    <body>
+      <!--all hidden information for sidebar search-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <h3>Cross Origin Search</h3>
+          <input class="form-control mr-sm-2" type="search" id="myInput2" onkeyup="myFunction2()" placeholder="Search" aria-label="Search">
+<div id="container3">
+    <script src="../links.js"></script>
+  </div>
+<!--end links section from sidebar-->
+          </div>
+          <!--main page section-->
+          <div id="main">
+            <!--nav bar with dropdowns and search button-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+              <div>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">    
+                    <!--button that opens the sidebar-->
+                    <button class="button btn-primary" onclick="openNav()">Search&ensp;<i class="fas fa-search"></i>  </button>
+                    <!--dropdowns
+                      -to add either uncomment or copy and paste changing corresponding links
+                      -to remove either comment out or delete
+                    -->
+                    <li class="nav-item active">
+                      <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                   
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Forms
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../busDev/forms.html">Business Development</a>
+                      <!--  <a class="dropdown-item" href="../cityClerk/forms.html">City Clerk</a>
+                        <a class="dropdown-item" href="../fieldOps/forms.html">Field Operations</a>
+                        <a class="dropdown-item" href="../fire/forms.html">Fire</a>
+                        <a class="dropdown-item" href="../housing/forms.html">Housing and Community Development</a>
+                      --><a class="dropdown-item" href="../hr/forms.html">Human Resources</a>                                <a class="dropdown-item" href="../finance/forms.html">Finance</a>
+
+                        <!--<a class="dropdown-item" href="../infoServices/forms.html">Information Servies</a>
+                        <a class="dropdown-item" href="../infraDev/forms.html">Infrastructure & Development</a>
+                        <a class="dropdown-item" href="../police/forms.html">Police</a>
+                        --><a class="dropdown-item" href="../procurement/forms.html">Procurement</a>
+                        <a class="dropdown-item" href="../pcard/forms.html">P-Card</a>
+                        <!--
+                        <a class="dropdown-item" href="../waterWorks/forms.html">Water Works</a>
+                        --></div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Policies
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <!--  <a class="dropdown-item" href="../busDev/policies.html">Business Development</a>-->
+                       <!-- <a class="dropdown-item" href="../cityClerk/policies.html">City Clerk</a>
+                        <a class="dropdown-item" href="../fieldOps/policies.html">Field Operations</a>
+                        <a class="dropdown-item" href="../finance/policies.html">Finance</a>
+                        <a class="dropdown-item" href="../fire/policies.html">Fire</a>
+                        <a class="dropdown-item" href="../housing/policies.html">Housing and Community Development</a>
+                       --><a class="dropdown-item" href="../hr/policies.html">Human Resources</a>
+                        <!--<a class="dropdown-item" href="../infoServices/policies.html">Information Servies</a>
+                        <a class="dropdown-item" href="../infraDev/policies.html">Infrastructure & Development</a>
+                        <a class="dropdown-item" href="../police/policies.html">Police</a>
+                        --><a class="dropdown-item" href="../procurement/policies.html">Procurement</a>
+                        <a class="dropdown-item" href="../pcard/policiesandprocedures.html">P-Card</a>
+                        <!--
+                        <a class="dropdown-item" href="../waterWorks/policies.html">Water Works</a>
+                        --></div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Brochures
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../busDev/brochures.html">Business Development</a>
+                        <!--<a class="dropdown-item" href="../cityClerk/brochures.html">City Clerk</a>
+                        <a class="dropdown-item" href="../fieldOps/brochures.html">Field Operations</a>
+                        <a class="dropdown-item" href="../finance/brochures.html">Finance</a>
+                        <a class="dropdown-item" href="../fire/brochures.html">Fire</a>
+                        <a class="dropdown-item" href="../housing/brochures.html">Housing and Community Development</a>
+                        --><a class="dropdown-item" href="../hr/brochures.html">Human Resources</a>
+                        <!--<a class="dropdown-item" href="../infoServices/brochures.html">Information Servies</a>
+                        <a class="dropdown-item" href="../infraDev/brochures.html">Infrastructure & Development</a>
+                        <a class="dropdown-item" href="../police/brochures.html">Police</a>
+                        <a class="dropdown-item" href="../procurement/brochures.html">Procurement</a>
+                        <a class="dropdown-item" href="../waterWorks/brochures.html">Water Works</a>
+                        --></div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Documents
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../busDev/documents.html">Business Development</a>
+                        <!--<a class="dropdown-item" href="../cityClerk/documents.html">City Clerk</a>
+                        <a class="dropdown-item" href="../fieldOps/documents.html">Field Operations</a>
+                        <a class="dropdown-item" href="../fire/documents.html">Fire</a>
+                        <a class="dropdown-item" href="../housing/documents.html">Housing and Community Development</a>
+                        --><a class="dropdown-item" href="../hr/documents.html">Human Resources</a>                                <a class="dropdown-item" href="../finance/documents.html">Finance</a>
+
+                        <!--<a class="dropdown-item" href="../infoServices/documents.html">Information Servies</a>
+                        <a class="dropdown-item" href="../infraDev/documents.html">Infrastructure & Development</a>
+                        <a class="dropdown-item" href="../police/documents.html">Police</a>
+                        --><a class="dropdown-item" href="../procurement/documents.html">Procurement</a><!--
+                        <a class="dropdown-item" href="../waterWorks/documents.html">Water Works</a>
+                        --></div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Committees
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="../hr/committies.html">Wellness Committee</a>
+                          </div>
+                      </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Procedures
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../busDev/procedures.html">Business Development</a>
+                        <!--<a class="dropdown-item" href="../cityClerk/procedures.html">City Clerk</a>
+                        <a class="dropdown-item" href="../fieldOps/procedures.html">Field Operations</a>-->
+                        <!--<a class="dropdown-item" href="../fire/procedures.html">Fire</a>
+                        <a class="dropdown-item" href="../housing/procedures.html">Housing and Community Development</a>
+                        --><a class="dropdown-item" href="../hr/procedures.html">Human Resources</a>
+                        <!--<a class="dropdown-item" href="../infoServices/procedures.html">Information Servies</a>
+                        <a class="dropdown-item" href="../infraDev/procedures.html">Infrastructure & Development</a>
+                        <a class="dropdown-item" href="../police/procedures.html">Police</a>
+                        --><a class="dropdown-item" href="../mayor/mayor.html">Mayors Office</a>
+                        <a class="dropdown-item" href="../procurement/procedures.html">Procurement</a>
+                        <a class="dropdown-item" href="../pcard/policiesandprocedures.html">P-Card</a>
+                        <a class="dropdown-item" href="../phoneaddr/procedures.html">Phone and Address</a><!--
+                        <a class="dropdown-item" href="../waterWorks/procedures.html">Water Works</a>
+                        --></div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Utilities
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <!--  <a class="dropdown-item" href="../busDev/utilities.html">Business Development</a>-->
+                        <!--<a class="dropdown-item" href="../cityClerk/utilities.html">City Clerk</a>
+                        <a class="dropdown-item" href="../fieldOps/utilities.html">Field Operations</a>
+                        <a class="dropdown-item" href="../fire/utilities.html">Fire</a>
+                        <a class="dropdown-item" href="../housing/utilities.html">Housing and Community Development</a>
+                        --><a class="dropdown-item" href="../hr/utilities.html">Human Resources</a>       
+                               <a class="dropdown-item" href="../finance/utilities.html">Finance</a>
+
+                        <a class="dropdown-item" href="../infoServices/utilities.html">Information Services</a><!--
+                        <a class="dropdown-item" href="../infraDev/utilities.html">Infrastructure & Development</a>
+                        <a class="dropdown-item" href="../police/utilities.html">Police</a>
+                        --> <a class="dropdown-item" href="../procurement/utilities.html">Procurement</a>
+                        <a class="dropdown-item" href="../phoneaddr/utilities.html">Phone and Address</a>
+                       <!-- <a class="dropdown-item" href="../waterWorks/utilities.html">Water Works</a>
+                        --></div>
+                    </li>
+                  </ul>
+                  <!--end dropdowns-->
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <!--filter section to filter current links displayed on the page
+                -calls js function to get elements in the div to remove based on whats typed in filter area  
+                -->
+               <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" id="myInput" onkeyup="myFunction()" placeholder="Filter" aria-label="Search">
+                    </form>
+                    <!--end filter-->
+                  </div>
+         
+    
+                </div>
+                  </nav>
+                          <!--section to display header and all blue area under tabs-->
+                        <div class="jumbotron jumbotron-fluid bg-primary" style="color: white;">
+         
+                    <div class="container">
+                      <h1 class="display-4">Mayors Office Procedures</h1>
+                    </div>
+                  </div>
+                  <!--end header area-->
+                  <!--
+                    div that holds all lionks for filtering 
+                    -to add a link put the href tag inside a list tag under the appropriate letter
+                    -if letter isnt on page, add the letter by copying and pasting another one and changing the letter
+                    -to delete a link either comment out or completely remove
+                      -if completely removing be sure to remove it from all cross page searches as well
+                    -if removing last link under letter also remove the letter as well to clean up the page 
+                  -->
+                  <div id="container2">
+                      <ul>
+                                          <div class="row">
+                                            <div class="col-sm-1"></div>
+                                       
+                                           
+                                            <div class="col-sm-5">
+                                 
+                                             
+                                              
+                                              
+                                              <h3>Procedure</h3>
+                                              <hr>
+                                              <div id="linkn">
+                                                  <li><a href="ASANA Procedure 08.26.15.pdf" target="_blank">ASANA and Legal Tracking Policy</a><br></li>
+                                               
+
+                                                <br>
+                                              </div>  
+                                              
+                                            </div>
+                                           
+                                            <div class="col-sm-5">
+                                             
+                                               
+                                          
+                                              
+                                              
+                                             
+                                            </div>
+                                          </div>
+                                     </ul>
+                                        </div>
+                                        <!--end div for filtering and adding links-->
+                  <!--js for filtering the pages and the search options in the sidebar, DO NOT CHANGE-->                      
+                  <script>
+                      function myFunction() {
+                          var input, filter, ul, li, a, i, txtValue;
+                          input = document.getElementById("myInput");
+                          filter = input.value.toUpperCase();
+                          ul = document.getElementById("container2");
+                          li = ul.getElementsByTagName("li");
+                          for (i = 0; i < li.length; i++) {
+                              a = li[i].getElementsByTagName("a")[0];
+                              txtValue = a.textContent || a.innerText;
+                              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                  li[i].style.display = "";
+                              } else {
+                                  li[i].style.display = "none";
+                              }
+                          }
+                      }
+                      function myFunction2() {
+                          var input, filter, ul, li, a, i, txtValue;
+                          input = document.getElementById("myInput2");
+                          filter = input.value.toUpperCase();
+                          ul = document.getElementById("container3");
+                          li = ul.getElementsByTagName("li");
+                          for (i = 0; i < li.length; i++) {
+                              a = li[i].getElementsByTagName("a")[0];
+                              txtValue = a.textContent || a.innerText;
+                              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                  li[i].style.display = "";
+                              } else {
+                                  li[i].style.display = "none";
+                              }
+                          }
+                      }
+                      function openNav() {
+  document.getElementById("mySidenav").style.width = "350px";
+  document.getElementById("main").style.marginLeft = "350px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+                      </script>
+                      </div>
+    </body>
+</html>
