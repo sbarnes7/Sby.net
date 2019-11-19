@@ -1,2 +1,3 @@
 # Sby.net
-Intranet Site for city wide file sharing
+## How to add files to the Intranet site
+- Go to the page where the file needs to be added
